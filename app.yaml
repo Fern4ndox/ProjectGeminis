@@ -4,10 +4,3 @@ threadsafe: true
 handlers:
 - url: /.*
   script: index.php
-  
-  env_variables:
-  # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
-  # values obtained when configuring your Cloud SQL instance.
-  MYSQL_DSN: mysql:unix_socket=/cloudsql/sqlv1;dbname=db_users
-  MYSQL_USER: root
-  MYSQL_PASSWORD: Test123+.
